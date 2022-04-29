@@ -1,0 +1,403 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p{
+    line-height: 26px;
+}
+.body{
+    width: 100%;
+    background: #ffffff;
+}
+.menu_checker{
+    display: none;
+}
+.burger{
+    display: none;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    font-size: 50px;
+    font-weight: bolder;
+}
+.navbar{
+    width: 100%;
+    height: 100px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+.nav_logo{
+    width: 150px;
+    height: 100px;
+    margin-left: 50px;
+}
+.nav_logo h1{
+    margin: 40px auto;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 40px;
+}
+ul{
+    height: 50px;
+    margin: 32px  70px 0 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+ul > li{
+    margin: 0 41px;
+}
+.selected a{
+    border-bottom: 3px solid black;
+}
+.contact{
+    width: 150px;
+    height: 50px;
+    display: block;
+    border-radius:  20px;
+    border:1px solid green;
+    margin: 0 0 0 30px;
+}
+.contact a {
+    color:green;
+    text-align: center;
+    margin: 12px auto;
+}
+a{
+    display: block;
+    color:black;
+    text-decoration: none;
+    font-size: 20px;
+}
+.marriage_container{
+    width: 95%;
+    height: 540px;
+    background-color: #ffffff;
+    margin: 190px auto 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.marriage_banner{
+    width: 49%;
+    height: 540px;
+    background-image: url(../img/2.jpg);
+    background-size: cover;
+    background-position: left;
+}
+.read_marriage h1{
+    font-size: 50px;
+}
+.mariage_btn{
+    width: 150px;
+    height: 50px;
+    background-color: green;
+    color: #ffffff;
+    border-radius:  20px;
+    margin:  45px 0 0 0;
+    border: none;
+    cursor: pointer;
+}
+.we_offer_conteiner{
+    width: 100%;
+    height: 540px;
+    background-color: #F7FFF6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+.we_offer h2{
+    font-size: 35px;
+}
+.check_circle{
+    font-size: 14px !important;
+    color: white;
+    background-color: green;
+    border-radius: 50%;
+}
+.post{
+    display: block;
+    margin: 10px 0 0 0;
+}
+.offer_btn{
+    width: 150px;
+    height: 50px;
+    display: block;
+    border-radius:  20px;
+    border:1px solid green;
+    color: green;
+    background-color: #F7FFF6;
+    cursor: pointer;
+}
+.perfect_container{
+    width: 100%;
+    margin: 0 0 80px 0;
+}
+.perfect_box{
+    width: 50%;
+    height: 200px;
+    margin: 50px auto;
+}
+.perfect_box h2{
+    font-size: 35px;
+    margin: 0 0 25px 0;
+}
+.cards_conteiner{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.pre_card{
+    width: 30%;
+    height: 450px;
+    padding: 45px 20px 0 40px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.085);
+    border-radius: 20px;
+}
+.card_text h3{
+    margin: 20px 0 20px 0;
+}
+.card_text button{
+    width: 130px;
+    height: 45px;
+    background-color: #ffffff;
+    color: green;
+    border: 1px solid green;
+    margin: 40px  0 45px 0;
+    border-radius: 20px;
+    cursor: pointer;
+} 
+.costumers_container{
+    width: 100%;
+    background-color: #F7FFF6;
+    padding:  90px  0 180px 0;
+    position: relative;
+}
+.costumers_container h3 {
+    font-size: 35px;
+    text-align: center;
+}
+.right_angle{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.left_angle{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.costumer_flexbox{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 80px 0 0 0;
+}
+.costumers_cards{
+    width: 30%;
+    background-color: #ffffff;
+    padding: 35px 30px 0 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.085);
+}
+.cards_avatar{
+    height: 56px;
+}
+.cards_avatar img{
+    float: left;
+}
+.cards_avatar span {
+    font-size: 15px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 7px 0 0 5px;
+}
+.costumers_cards h1{
+    float: right;
+    color: green;
+}
+.costumers_cards p{
+    margin: 22px 0 30px 0;
+}
+.subscribe_container{
+    width: 100%;
+    background-color: #ffffff;
+    padding: 100px  0 0 0;
+}
+.subscribe_header{
+    width: 70%;
+    margin: 0 auto;
+}
+.subscribe_header h3{
+    font-size: 35px;
+    margin: 0px auto 20px;
+    text-align: center;
+}
+.subscribe_header p{
+    text-align: center;
+}
+.subscribe_input_box{
+    width: 70%;
+    margin: 70px auto 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.subscribe_input_box input{
+    width: 70%;
+    height: 50px;
+    border-radius: 20px;
+    border:none;
+    background-color: #F2F1F1;
+    padding: 0 0 0 35px;
+}
+.subscribe_input_box button{
+    width: 20%;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    background-color: green;
+    color: #ffffff;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+.footer{
+    width: 100%;
+    background-color: #010133;
+    padding: 150px  150px 0 210px;
+}
+.footer_flexbox{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer_cart h1{
+    color: #ffffff;
+    margin: 0 0 20px 0;
+}
+.footer_cart h3{
+    color: #ffffff;
+    margin: 15px 0 15px 0;
+    font-weight: 300;
+}
+.conect_with_us h3{
+    color: #ffffff;
+}
+.social_media img{
+    margin: 0 20px 0 0;
+}
+@media only screen and (max-width:1200px) {
+    .marriage_container{
+        justify-content: center;
+        flex-direction: column;
+        height: 603px;
+        gap: 20px;
+    }
+    .marriage_banner{
+        width: 300px;
+        height: 300px;
+    }
+    .perfect_box{
+        height: 400px;
+    }
+    .we_offer_conteiner{
+        height: 750px;
+        justify-content: center;
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    .cards_conteiner{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .pre_card{
+        width: 80%;
+
+    }
+    .costumer_flexbox{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+    .costumers_cards{
+        width:70% ;
+    }
+    .footer{
+        padding: 150px  50px 50px 50px;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    ul{
+        display: none;
+        width: 40%;
+        height: 200px;
+        position: absolute;
+        top: 100px;
+        right: 0;
+        z-index: 5;;
+        margin: 0;
+    }
+    ul li{
+        width: initial !important;
+        height: initial !important;
+        margin: 20px 0 20px 0 !important;
+    }
+    li a{
+        color: #ffffff !important;
+        text-align: center;
+        border: none !important; 
+    }
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+    .menu_checker:checked ~ ul{
+        display: block;
+    }
+    .menu_checker:checked ~ .burger{
+        color: white;
+        width: 100%;
+        height: 700px;
+        top: 0;
+        right: 0;
+        padding: 40px 80px;
+        background-color: rgba(0, 0, 0, 1);
+    }
+    .read_marriage h1{
+        font-size: 35px;
+    }
+    .left_angle{
+        width: 50px;
+        height: 70px;
+    }
+    .right_angle{
+        width: 50px;
+        height: 70px;
+    }
+    .subscribe_input_box{
+        flex-direction: column;
+        gap:30px;
+    }
+    .subscribe_input_box button{
+        width: 150px;
+    }
+    .subscribe_input_box input{
+        width: 90%;
+    }
+    .footer_flexbox{
+        flex-direction: column;
+        gap: 30px;
+    }
+}
