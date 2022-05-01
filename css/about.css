@@ -6,10 +6,6 @@
 p{
     line-height: 26px;
 }
-.body{
-    width: 100%;
-    background: #ffffff;
-}
 .menu_checker{
     display: none;
 }
@@ -52,7 +48,7 @@ ul{
 ul > li{
     margin: 0 41px;
 }
-.selected_page a{
+.selected a{
     border-bottom: 3px solid black;
 }
 .contact{
@@ -74,163 +70,58 @@ a{
     text-decoration: none;
     font-size: 20px;
 }
-.marriage_container{
-    width: 95%;
-    height: 540px;
+.body{
+    width: 100%;
     background-color: #ffffff;
-    margin: 190px auto 100px;
+    padding: 150px 0 0 0;
+}
+.body > div{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.founder_container{
+    width: 100%;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
-.marriage_banner{
-    width: 49%;
-    height: 540px;
-    background-image: url(../img/2.jpg);
-    background-size: cover;
-    background-position: left;
+.founder_container img{
+    width: 70%;
+    max-width: 600px;
 }
-.read_marriage h1{
+.founder_box{
+    width: 40%;
+}
+.founder_box h1{
     font-size: 50px;
 }
-.mariage_btn{
-    width: 150px;
-    height: 50px;
-    background-color: green;
-    color: #ffffff;
-    border-radius:  20px;
-    margin:  45px 0 0 0;
-    border: none;
-    cursor: pointer;
+.founder_box p{
+    margin: 18px 0;
 }
-.we_offer_conteiner{
-    width: 100%;
-    height: 540px;
-    background-color: #F7FFF6;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 20px;
-}
-.we_offer h2{
-    font-size: 35px;
-}
-.check_circle{
-    font-size: 14px !important;
-    color: white;
-    background-color: green;
-    border-radius: 50%;
-}
-.post{
-    display: block;
-    margin: 10px 0 0 0;
-}
-.offer_btn{
-    width: 150px;
-    height: 50px;
-    display: block;
-    border-radius:  20px;
-    border:1px solid green;
-    color: green;
-    background-color: #F7FFF6;
-    cursor: pointer;
-}
-.perfect_container{
-    width: 100%;
-    margin: 0 0 80px 0;
-}
-.perfect_box{
-    width: 50%;
-    height: 200px;
-    margin: 50px auto;
-}
-.perfect_box h2{
-    font-size: 35px;
-    margin: 0 0 25px 0;
-}
-.cards_conteiner{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-.pre_card{
-    width: 30%;
-    height: 450px;
-    padding: 45px 20px 0 40px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.085);
-    border-radius: 20px;
-}
-.card_text h3{
-    margin: 20px 0 20px 0;
-}
-.card_text button{
-    width: 130px;
-    height: 45px;
-    background-color: #ffffff;
-    color: green;
-    border: 1px solid green;
-    margin: 40px  0 45px 0;
-    border-radius: 20px;
-    cursor: pointer;
-} 
-.costumers_container{
+.are_container{
     width: 100%;
     background-color: #F7FFF6;
-    padding:  90px  0 180px 0;
-    position: relative;
+    padding: 130px 0 140px 0 ;
 }
-.costumers_container h3 {
+.are_container h3{
     font-size: 35px;
     text-align: center;
 }
-.right_angle{
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-.left_angle{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-.costumer_flexbox{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: 80px 0 0 0;
-}
-.costumers_cards{
-    width: 30%;
-    background-color: #ffffff;
-    padding: 35px 30px 0 25px;
+.are_container button{
+    width: 200px;
+    height: 50px;
+    background-color: #029837;
+    color: rgb(255, 255, 255);
     border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.085);
-}
-.cards_avatar{
-    height: 56px;
-}
-.cards_avatar img{
-    float: left;
-}
-.cards_avatar span {
-    font-size: 15px;
-    font-weight: bold;
-    display: inline-block;
-    margin: 7px 0 0 5px;
-}
-.costumers_cards h1{
-    float: right;
-    color: green;
-}
-.costumers_cards p{
-    margin: 22px 0 30px 0;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 50px auto 0;
 }
 .subscribe_container{
     width: 100%;
     background-color: #ffffff;
-    padding: 100px  0 0 0;
+    padding: 100px  0 0 0 !important;
 }
 .subscribe_header{
     width: 70%;
@@ -272,7 +163,7 @@ a{
 .footer{
     width: 100%;
     background-color: #010133;
-    padding: 150px  150px 100px 210px;
+    padding: 150px  150px 0 210px;
 }
 .footer_flexbox{
     width: 100%;
@@ -295,49 +186,17 @@ a{
 .social_media img{
     margin: 0 20px 0 0;
 }
-@media only screen and (max-width:1200px) {
-    .marriage_container{
-        justify-content: center;
+@media only screen and (max-width: 1200px) {
+    .founder_container{
         flex-direction: column;
-        height: 603px;
-        gap: 20px;
     }
-    .marriage_banner{
-        width: 300px;
-        height: 300px;
-    }
-    .perfect_box{
-        height: 400px;
-    }
-    .we_offer_conteiner{
-        height: 750px;
-        justify-content: center;
-        flex-direction: column-reverse;
-        gap: 20px;
-    }
-    .cards_conteiner{
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-    }
-    .pre_card{
+    .founder_box{
         width: 80%;
-
-    }
-    .costumer_flexbox{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 30px;
-    }
-    .costumers_cards{
-        width:70% ;
     }
     .footer{
-        padding: 150px  50px 100px 50px;
+        padding: 150px  50px 50px 50px;
     }
 }
-
 @media only screen and (max-width: 760px) {
     ul{
         display: none;
@@ -377,16 +236,8 @@ a{
         padding: 40px 80px;
         background-color: rgba(0, 0, 0, 1);
     }
-    .read_marriage h1{
-        font-size: 35px;
-    }
-    .left_angle{
-        width: 50px;
-        height: 70px;
-    }
-    .right_angle{
-        width: 50px;
-        height: 70px;
+    .body{
+        padding:150px 0 0 0
     }
     .subscribe_input_box{
         flex-direction: column;
