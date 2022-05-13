@@ -86,7 +86,7 @@ a{
 .marriage_banner{
     width: 49%;
     height: 540px;
-    background-image: url(../img/2.jpg);
+    background-image: url(./img/2.jpg);
     background-size: cover;
     background-position: left;
 }
